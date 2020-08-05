@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> should render successfully 1`] = `
+<div>
+  <div>
+    Welcome to Medly Frontend Coding Challenge
+  </div>
+</div>
+`;

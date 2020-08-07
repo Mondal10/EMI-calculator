@@ -4,10 +4,11 @@ import styled from 'styled-components';
 
 const InputContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   font-size: 20px;
   padding: 2% 0;
-  color: #082f52;
+  color: #e8e9e9;
 `;
 
 const Lable = styled.div`
@@ -27,7 +28,11 @@ const Input = styled.input.attrs({
   border: 2px solid #A3BDE6;
 `;
 
-function UserInput({ name, label, value, handleInput }) {
+const InfoSpan = styled.span`
+  padding: 7px;
+`;
+
+function UserInput({ name, symbol, label, value, handleInput }) {
 
   const handleOnkeyDown = (event) => {
     const { keyCode } = event;
@@ -42,7 +47,10 @@ function UserInput({ name, label, value, handleInput }) {
     <InputContainer>
       <Lable>{label}</Lable>
       <div>
-        <Input name={name} value={value} onChange={handleInput} onKeyDown={handleOnkeyDown} />
+        <label>
+          <InfoSpan>{symbol}</InfoSpan>
+          <Input name={name} value={value} onChange={handleInput} onKeyDown={handleOnkeyDown} />
+        </label>
       </div>
     </InputContainer>
   )

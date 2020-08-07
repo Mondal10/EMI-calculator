@@ -6,14 +6,15 @@ import UserInput from './UserInput';
 import Result from './Result';
 
 const Header = styled.h2`
-  color: #082f52;
+  color: #e8e9e9;
 `;
 
 const CalcContainer = styled.div`
-  background-color: #FFFFFF;
-  width: 50%;
+  background-color: #232627;
+  font-family: sans-serif;
+  width: auto;
   padding: 2%;
-  box-shadow: 0 3px 10px rgba(0,0,0,.16);
+  box-shadow: 0 3px 10px rgba(0,0,0,.6);
   border-radius: 20px;
 `;
 
@@ -53,7 +54,7 @@ function Calculator() {
     const totalPayment = Math.round(EMI * tenure);
     const totalInterestToPay = Math.round(totalPayment - amount);
 
-    setResultObj({...resultObj, loanEMI, totalInterestToPay, totalPayment});
+    setResultObj({ ...resultObj, loanEMI, totalInterestToPay, totalPayment });
   };
 
   useEffect(() => {
@@ -64,11 +65,11 @@ function Calculator() {
     <CalcContainer>
       <Header> EMI Calculator </Header>
       <div className='user-inpt-container'>
-        <UserInput name='LA' value={amount} label='Loan Amount' handleInput={handleInput} />
-        <UserInput name='IR' value={interest} label='Interest Rate' handleInput={handleInput} />
-        <UserInput name='LT' value={tenure} label='Loan Tenure' handleInput={handleInput} />
+        <UserInput name='LA' symbol="₹" value={amount} label='Loan Amount' handleInput={handleInput} />
+        <UserInput name='IR' symbol="%" value={interest} label='Interest Rate' handleInput={handleInput} />
+        <UserInput name='LT' symbol="Mo" value={tenure} label='Loan Tenure' handleInput={handleInput} />
       </div>
-      <Result resultObj={resultObj} amount={amount}/>
+      <Result resultObj={resultObj} amount={amount} />
     </CalcContainer>
   )
 }

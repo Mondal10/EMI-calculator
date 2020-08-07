@@ -2,20 +2,21 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import PieChart from  '../Calculator/PieChart';
+import PieChart from '../Calculator/PieChart';
 
 const ResultContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
   font-size: 20px;
   padding: 2%;
   border-radius: 20px;
-  color: #3E4C5F;
+  color: #232627;
   justify-content: space-between;
   background-color: #ededf2;
 `;
 
 const ValuesContainer = styled.div`
-  width: 50%;
+  width: auto;
 `;
 
 const Value = styled.div`
@@ -23,10 +24,11 @@ const Value = styled.div`
 `;
 
 const ChartContainer = styled.div`
-  width: 50%;
+  width: auto;
   padding: 2%;
+  margin: 20px auto;
   border-radius: 20px;
-  background-color: #d1e0f5;
+  background-color: #232627;
 `;
 
 function Result({ resultObj, amount }) {
@@ -36,7 +38,8 @@ function Result({ resultObj, amount }) {
   const principalLoanAmt = parseFloat(((amount / totalPayment) * 100).toPrecision(4));
   const totalInterest = 100 - principalLoanAmt;
 
-  const rupeeFormatter = new Intl.NumberFormat('en-US', {
+  // Convert to INR format with symbol
+  const rupeeFormatter = new Intl.NumberFormat('en-IN', {
     style: 'currency',
     currency: 'INR',
     minimumFractionDigits: 0
@@ -56,7 +59,7 @@ function Result({ resultObj, amount }) {
         </Value>
       </ValuesContainer>
       <ChartContainer>
-        <PieChart principalLoanAmt={principalLoanAmt} totalInterest={totalInterest}/>
+        <PieChart principalLoanAmt={principalLoanAmt} totalInterest={totalInterest} />
       </ChartContainer>
     </ResultContainer>
   )

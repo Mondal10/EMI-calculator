@@ -1,10 +1,10 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import { App } from './App';
 
-describe('App Snapshot', () => {
-  it('Whole App rendered successfully', () => {
-    const tree = renderer.create(<App />).toJSON();
-    expect(tree).toMatchSnapshot();
+describe('<App />', () => {
+  it('should render successfully', () => {
+    const { container } = render(<App />);
+    expect(container).toMatchSnapshot();
   });
 });

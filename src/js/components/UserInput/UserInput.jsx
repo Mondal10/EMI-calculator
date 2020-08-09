@@ -34,22 +34,13 @@ const InfoSpan = styled.span`
 
 function UserInput({ name, symbol, label, value, handleInput }) {
 
-  const handleOnkeyDown = (event) => {
-    const { keyCode } = event;
-
-    // All keys except numbers, arrow navigation, delete, backspace and tab are blocked
-    if (!((keyCode >= 48 && keyCode <= 57) || (keyCode >= 37 && keyCode <= 40) || keyCode == 8 || keyCode == 46 || keyCode == 9 || keyCode == 190 || keyCode == 110)) {
-      event.preventDefault();
-    }
-  };
-
   return (
     <InputContainer>
       <Lable>{label}</Lable>
       <div>
         <label>
           <InfoSpan>{symbol}</InfoSpan>
-          <Input name={name} value={value} onChange={handleInput} onKeyDown={handleOnkeyDown} />
+          <Input name={name} value={value} onChange={handleInput} />
         </label>
       </div>
     </InputContainer>

@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 
 import styled from 'styled-components';
 
-import UserInput from './UserInput';
-import Result from './Result';
+import UserInput from '../UserInput/UserInput';
+import Result from '../Result/Result';
 
 const Header = styled.h2`
   color: #e8e9e9;
@@ -28,8 +28,17 @@ function Calculator() {
     totalPayment: 0
   });
 
+  // True only when the input is either number or a number upto 2 decimal places
+  const isValidNumber = (number) => {
+    const validNumberRE = new RegExp(/^\d*\.?\d{0,2}$/);
+
+    return (validNumberRE.test(number));
+  };
+
   const handleInput = (event) => {
     const { name, value } = event.target;
+
+    if (!isValidNumber(value)) return;
 
     switch (name) {
       case 'LA':

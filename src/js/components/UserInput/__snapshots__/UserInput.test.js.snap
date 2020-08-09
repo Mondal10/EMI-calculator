@@ -1,0 +1,145 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserInput Snapshot Loan Amount UserInput rendered successfully 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 20px;
+  padding: 2% 0;
+  color: #e8e9e9;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 {
+  color: #082f52;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 35px;
+  border: 2px solid #A3BDE6;
+}
+
+.c2 {
+  padding: 7px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    Loan Amount
+  </div>
+  <div>
+    <label>
+      <span
+        className="c2"
+      >
+        ₹
+      </span>
+      <input
+        className="c3"
+        name="LA"
+        type="text"
+        value="1000000"
+      />
+    </label>
+  </div>
+</div>
+`;
+
+exports[`UserInput Snapshot Loan Tenure UserInput rendered successfully 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 20px;
+  padding: 2% 0;
+  color: #e8e9e9;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 {
+  color: #082f52;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 35px;
+  border: 2px solid #A3BDE6;
+}
+
+.c2 {
+  padding: 7px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    Loan Tenure
+  </div>
+  <div>
+    <label>
+      <span
+        className="c2"
+      >
+        Mo
+      </span>
+      <input
+        className="c3"
+        name="LT"
+        type="text"
+        value="240"
+      />
+    </label>
+  </div>
+</div>
+`;

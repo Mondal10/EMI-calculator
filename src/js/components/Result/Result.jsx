@@ -2,7 +2,7 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import PieChart from '../Calculator/PieChart';
+import PieChart from '../PieChart/PieChart';
 
 const ResultContainer = styled.div`
   display: flex;
@@ -48,13 +48,13 @@ function Result({ resultObj, amount }) {
   return (
     <ResultContainer>
       <ValuesContainer>
-        <Value>
+        <Value id="loanEmi">
           Loan EMI: {loanEMI ? rupeeFormatter.format(loanEMI) : null}
         </Value>
-        <Value>
+        <Value id="totalInterest">
           Total Interest Payable: {totalInterestToPay ? rupeeFormatter.format(totalInterestToPay) : null}
         </Value>
-        <Value>
+        <Value id="totalPayment">
           Total Payment: {totalPayment ? rupeeFormatter.format(totalPayment) : null}
         </Value>
       </ValuesContainer>

@@ -1,9 +1,234 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<App /> should render successfully 1`] = `
-<div>
-  <div>
-    Welcome to Medly Frontend Coding Challenge
+exports[`App Snapshot Whole App rendered successfully 1`] = `
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 20px;
+  padding: 2% 0;
+  color: #e8e9e9;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  color: #082f52;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 35px;
+  border: 2px solid #A3BDE6;
+}
+
+.c5 {
+  padding: 7px;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-size: 20px;
+  padding: 2%;
+  border-radius: 20px;
+  color: #232627;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: #ededf2;
+}
+
+.c8 {
+  width: auto;
+}
+
+.c9 {
+  padding: 2% 0;
+}
+
+.c10 {
+  width: auto;
+  padding: 2%;
+  margin: 20px auto;
+  border-radius: 20px;
+  background-color: #232627;
+}
+
+.c2 {
+  color: #e8e9e9;
+}
+
+.c1 {
+  background-color: #232627;
+  font-family: sans-serif;
+  width: auto;
+  padding: 2%;
+  box-shadow: 0 3px 10px rgba(0,0,0,.6);
+  border-radius: 20px;
+}
+
+.c0 {
+  height: 100vh;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <h2
+      className="c2"
+    >
+       EMI Calculator 
+    </h2>
+    <div
+      className="user-inpt-container"
+    >
+      <div
+        className="c3"
+      >
+        <div
+          className="c4"
+        >
+          Loan Amount
+        </div>
+        <div>
+          <label>
+            <span
+              className="c5"
+            >
+              ₹
+            </span>
+            <input
+              className="c6"
+              name="LA"
+              onChange={[Function]}
+              type="text"
+              value=""
+            />
+          </label>
+        </div>
+      </div>
+      <div
+        className="c3"
+      >
+        <div
+          className="c4"
+        >
+          Interest Rate
+        </div>
+        <div>
+          <label>
+            <span
+              className="c5"
+            >
+              %
+            </span>
+            <input
+              className="c6"
+              name="IR"
+              onChange={[Function]}
+              type="text"
+              value=""
+            />
+          </label>
+        </div>
+      </div>
+      <div
+        className="c3"
+      >
+        <div
+          className="c4"
+        >
+          Loan Tenure
+        </div>
+        <div>
+          <label>
+            <span
+              className="c5"
+            >
+              Mo
+            </span>
+            <input
+              className="c6"
+              name="LT"
+              onChange={[Function]}
+              type="text"
+              value=""
+            />
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c7"
+    >
+      <div
+        className="c8"
+      >
+        <div
+          className="c9"
+          id="loanEmi"
+        >
+          Loan EMI: 
+        </div>
+        <div
+          className="c9"
+          id="totalInterest"
+        >
+          Total Interest Payable: 
+        </div>
+        <div
+          className="c9"
+          id="totalPayment"
+        >
+          Total Payment: 
+        </div>
+      </div>
+      <div
+        className="c10"
+      />
+    </div>
   </div>
 </div>
 `;

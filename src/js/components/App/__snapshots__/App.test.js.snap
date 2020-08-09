@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App Snapshot Whole App rendered successfully 1`] = `
+exports[`<App /> should render successfully 1`] = `
 .c3 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -110,124 +110,123 @@ exports[`App Snapshot Whole App rendered successfully 1`] = `
   justify-content: center;
 }
 
-<div
-  className="c0"
->
+<div>
   <div
-    className="c1"
+    class="c0"
   >
-    <h2
-      className="c2"
-    >
-       EMI Calculator 
-    </h2>
     <div
-      className="user-inpt-container"
+      class="c1"
     >
+      <h2
+        class="c2"
+      >
+         EMI Calculator 
+      </h2>
       <div
-        className="c3"
+        class="user-inpt-container"
       >
         <div
-          className="c4"
+          class="c3"
         >
-          Loan Amount
+          <div
+            class="c4"
+          >
+            Loan Amount
+          </div>
+          <div>
+            <label>
+              <span
+                class="c5"
+              >
+                ₹
+              </span>
+              <input
+                class="c6"
+                name="LA"
+                type="text"
+                value=""
+              />
+            </label>
+          </div>
         </div>
-        <div>
-          <label>
-            <span
-              className="c5"
-            >
-              ₹
-            </span>
-            <input
-              className="c6"
-              name="LA"
-              onChange={[Function]}
-              type="text"
-              value=""
-            />
-          </label>
+        <div
+          class="c3"
+        >
+          <div
+            class="c4"
+          >
+            Interest Rate
+          </div>
+          <div>
+            <label>
+              <span
+                class="c5"
+              >
+                %
+              </span>
+              <input
+                class="c6"
+                name="IR"
+                type="text"
+                value=""
+              />
+            </label>
+          </div>
+        </div>
+        <div
+          class="c3"
+        >
+          <div
+            class="c4"
+          >
+            Loan Tenure
+          </div>
+          <div>
+            <label>
+              <span
+                class="c5"
+              >
+                Mo
+              </span>
+              <input
+                class="c6"
+                name="LT"
+                type="text"
+                value=""
+              />
+            </label>
+          </div>
         </div>
       </div>
       <div
-        className="c3"
+        class="c7"
       >
         <div
-          className="c4"
+          class="c8"
         >
-          Interest Rate
+          <div
+            class="c9"
+            id="loanEmi"
+          >
+            Loan EMI: 
+          </div>
+          <div
+            class="c9"
+            id="totalInterest"
+          >
+            Total Interest Payable: 
+          </div>
+          <div
+            class="c9"
+            id="totalPayment"
+          >
+            Total Payment: 
+          </div>
         </div>
-        <div>
-          <label>
-            <span
-              className="c5"
-            >
-              %
-            </span>
-            <input
-              className="c6"
-              name="IR"
-              onChange={[Function]}
-              type="text"
-              value=""
-            />
-          </label>
-        </div>
+        <div
+          class="c10"
+        />
       </div>
-      <div
-        className="c3"
-      >
-        <div
-          className="c4"
-        >
-          Loan Tenure
-        </div>
-        <div>
-          <label>
-            <span
-              className="c5"
-            >
-              Mo
-            </span>
-            <input
-              className="c6"
-              name="LT"
-              onChange={[Function]}
-              type="text"
-              value=""
-            />
-          </label>
-        </div>
-      </div>
-    </div>
-    <div
-      className="c7"
-    >
-      <div
-        className="c8"
-      >
-        <div
-          className="c9"
-          id="loanEmi"
-        >
-          Loan EMI: 
-        </div>
-        <div
-          className="c9"
-          id="totalInterest"
-        >
-          Total Interest Payable: 
-        </div>
-        <div
-          className="c9"
-          id="totalPayment"
-        >
-          Total Payment: 
-        </div>
-      </div>
-      <div
-        className="c10"
-      />
     </div>
   </div>
 </div>

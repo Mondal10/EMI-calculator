@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import Calculator from '../Calculator/Calculator';
 
 const Container = styled.div`
-  height: 100vh;
   align-items: center;
   display: flex;
   justify-content: center;

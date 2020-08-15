@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 import UserInput from '../UserInput/UserInput';
 import Result from '../Result/Result';
+import PaymentDistribution from '../PaymentDistribution/PaymentDistribution';
 
 const Header = styled.h2`
   color: #e8e9e9;
@@ -27,6 +28,8 @@ function Calculator() {
     totalInterestToPay: 0,
     totalPayment: 0
   });
+  const [monthlyDistribution, setMonthlyDistribution] = useState([]);
+  const [yearlyDistribution, setYearlyDistribution] = useState([]);
 
   // True only when the input is either number or a number upto 2 decimal places
   const isValidNumber = (number) => {
@@ -63,6 +66,66 @@ function Calculator() {
     const totalPayment = Math.round(EMI * tenure);
     const totalInterestToPay = Math.round(totalPayment - amount);
 
+    const monthlyInterests = [];
+    const monthlyPrinciples = [];
+    const monthlyBalances = [];
+    const monthlyDistribution = [];
+    const yearlyDistribution = [];
+
+    let balance = amount;
+    let month = 1;
+
+    let yearlyInterest = 0;
+    let yearlyPrinciple = 0;
+    let yearlyBalance = 0;
+
+    while (balance > 0) {
+      const monthlyInterest = Math.round(RPA * balance);
+      const monthlyPrinciple = Math.round(EMI - monthlyInterest);
+
+      balance -= monthlyPrinciple;
+
+      if (monthlyPrinciple > balance ) balance = 0;
+
+      monthlyInterests.push(monthlyInterest);
+      monthlyPrinciples.push(monthlyPrinciple);
+      monthlyBalances.push(balance);
+
+      monthlyDistribution.push({
+        monthlyInterest,
+        monthlyPrinciple,
+        balance
+      });
+
+      console.log('years: ', parseInt(tenure/12), 'months: ', tenure%12, 'current month: ', month);
+
+      // Yearly calculation
+      yearlyInterest += monthlyInterest;
+      yearlyPrinciple += monthlyPrinciple;
+      yearlyBalance += balance;
+      // if (month === parseInt(tenure/12) || month === tenure%12) {
+      //   console('year', month);
+      // }
+      if (month % 12 === 0) {
+        yearlyDistribution.push({
+          yearlyInterest,
+          yearlyPrinciple,
+          yearlyBalance
+        });
+
+        // re-initiate the values
+        yearlyInterest = 0;
+        yearlyPrinciple = 0;
+        yearlyBalance = 0;
+      }
+
+      month++;
+    }
+
+    console.log('years: ', parseInt(tenure/12), 'months: ', tenure%12);
+
+    setMonthlyDistribution([...monthlyDistribution]);
+    setYearlyDistribution([...yearlyDistribution]);
     setResultObj({ ...resultObj, loanEMI, totalInterestToPay, totalPayment });
   };
 
@@ -79,6 +142,7 @@ function Calculator() {
         <UserInput name='LT' symbol="Mo" value={tenure} label='Loan Tenure' handleInput={handleInput} />
       </div>
       <Result resultObj={resultObj} amount={amount} />
+      <PaymentDistribution monthlyDistribution={monthlyDistribution} yearlyDistribution={yearlyDistribution}/>
     </CalcContainer>
   )
 }

@@ -14,6 +14,7 @@ const Table = styled.table`
   border-collapse: collapse;
   width: 100%;
   text-align: center;
+  margin: 10px auto;
 `;
 
 const TableHead = styled.th`
@@ -36,16 +37,39 @@ function PaymentDistribution({ monthlyDistribution, yearlyDistribution }) {
     minimumFractionDigits: 0
   })
 
-  console.log(monthlyDistribution, yearlyDistribution);
-
   return (
     <Container>
       <Table>
         <thead>
           <tr>
-            <TableHead>Years/Months</TableHead>
+            <TableHead>Years</TableHead>
             <TableHead>Principal</TableHead>
             <TableHead>Interest</TableHead>
+            <TableHead>EMI</TableHead>
+            <TableHead>Balance</TableHead>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            yearlyDistribution.map(({ yearlyInterest, yearlyPrinciple, balance }, i) => (
+              <tr key={`Year: ${i + 1}`}>
+                <TableData>Year: {i + 1}</TableData>
+                <TableData>{rupeeFormatter.format(yearlyPrinciple)}</TableData>
+                <TableData>{rupeeFormatter.format(yearlyInterest)}</TableData>
+                <TableData>{rupeeFormatter.format(yearlyPrinciple + yearlyInterest)}</TableData>
+                <TableData>{rupeeFormatter.format(balance)}</TableData>
+              </tr>
+            ))
+          }
+        </tbody>
+      </Table>
+      <Table>
+        <thead>
+          <tr>
+            <TableHead>Months</TableHead>
+            <TableHead>Principal</TableHead>
+            <TableHead>Interest</TableHead>
+            <TableHead>EMI</TableHead>
             <TableHead>Balance</TableHead>
           </tr>
         </thead>
@@ -56,6 +80,7 @@ function PaymentDistribution({ monthlyDistribution, yearlyDistribution }) {
                 <TableData>Month: {i + 1}</TableData>
                 <TableData>{rupeeFormatter.format(monthlyPrinciple)}</TableData>
                 <TableData>{rupeeFormatter.format(monthlyInterest)}</TableData>
+                <TableData>{rupeeFormatter.format(monthlyPrinciple + monthlyInterest)}</TableData>
                 <TableData>{rupeeFormatter.format(balance)}</TableData>
               </tr>
             ))

@@ -73,11 +73,13 @@ function Calculator() {
     const yearlyDistribution = [];
 
     let balance = amount;
-    let month = 1;
+    let currentMonth = 1;
+    let currentYear = 1;
+    let totalYears = parseInt(tenure / 12);
+    let totalMonths = tenure % 12;
 
     let yearlyInterest = 0;
     let yearlyPrinciple = 0;
-    let yearlyBalance = 0;
 
     while (balance > 0) {
       const monthlyInterest = Math.round(RPA * balance);
@@ -97,32 +99,35 @@ function Calculator() {
         balance
       });
 
-      console.log('years: ', parseInt(tenure/12), 'months: ', tenure%12, 'current month: ', month);
-
       // Yearly calculation
       yearlyInterest += monthlyInterest;
       yearlyPrinciple += monthlyPrinciple;
-      yearlyBalance += balance;
-      // if (month === parseInt(tenure/12) || month === tenure%12) {
-      //   console('year', month);
-      // }
-      if (month % 12 === 0) {
+
+      if (currentMonth % 12 === 0) {
         yearlyDistribution.push({
           yearlyInterest,
           yearlyPrinciple,
-          yearlyBalance
+          balance
         });
 
         // re-initiate the values
         yearlyInterest = 0;
         yearlyPrinciple = 0;
-        yearlyBalance = 0;
+
+        currentYear++;
       }
 
-      month++;
-    }
+      // For remaining months eg: 16months is 1 year and 6 months
+      if (balance === 0 && currentYear > totalYears) {
+        yearlyDistribution.push({
+          yearlyInterest,
+          yearlyPrinciple,
+          balance
+        });
+      }
 
-    console.log('years: ', parseInt(tenure/12), 'months: ', tenure%12);
+      currentMonth++;
+    }
 
     setMonthlyDistribution([...monthlyDistribution]);
     setYearlyDistribution([...yearlyDistribution]);
@@ -142,7 +147,7 @@ function Calculator() {
         <UserInput name='LT' symbol="Mo" value={tenure} label='Loan Tenure' handleInput={handleInput} />
       </div>
       <Result resultObj={resultObj} amount={amount} />
-      <PaymentDistribution monthlyDistribution={monthlyDistribution} yearlyDistribution={yearlyDistribution}/>
+      <PaymentDistribution monthlyDistribution={monthlyDistribution} yearlyDistribution={yearlyDistribution} />
     </CalcContainer>
   )
 }

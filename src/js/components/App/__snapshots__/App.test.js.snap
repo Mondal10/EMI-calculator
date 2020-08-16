@@ -81,6 +81,28 @@ exports[`<App /> should render successfully 1`] = `
   background-color: #232627;
 }
 
+.c11 {
+  font-size: 20px;
+  padding: 2%;
+  border-radius: 20px;
+  color: #ededf2;
+  margin-top: 10px;
+}
+
+.c12 {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.c13 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  border: 1px solid #7c7e80;
+}
+
 .c2 {
   color: #e8e9e9;
 }
@@ -95,7 +117,6 @@ exports[`<App /> should render successfully 1`] = `
 }
 
 .c0 {
-  height: 100vh;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -226,6 +247,78 @@ exports[`<App /> should render successfully 1`] = `
         <div
           class="c10"
         />
+      </div>
+      <div
+        class="c11"
+      >
+        <table
+          class="c12"
+        >
+          <thead>
+            <tr>
+              <th
+                class="c13"
+              >
+                Years
+              </th>
+              <th
+                class="c13"
+              >
+                Principal
+              </th>
+              <th
+                class="c13"
+              >
+                Interest
+              </th>
+              <th
+                class="c13"
+              >
+                EMI
+              </th>
+              <th
+                class="c13"
+              >
+                Balance
+              </th>
+            </tr>
+          </thead>
+          <tbody />
+        </table>
+        <table
+          class="c12"
+        >
+          <thead>
+            <tr>
+              <th
+                class="c13"
+              >
+                Months
+              </th>
+              <th
+                class="c13"
+              >
+                Principal
+              </th>
+              <th
+                class="c13"
+              >
+                Interest
+              </th>
+              <th
+                class="c13"
+              >
+                EMI
+              </th>
+              <th
+                class="c13"
+              >
+                Balance
+              </th>
+            </tr>
+          </thead>
+          <tbody />
+        </table>
       </div>
     </div>
   </div>

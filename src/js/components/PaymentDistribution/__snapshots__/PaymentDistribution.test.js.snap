@@ -1,0 +1,609 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Payment Distribution Snapshot Payment Distribution rendered successfully 1`] = `
+.c0 {
+  font-size: 20px;
+  padding: 2%;
+  border-radius: 20px;
+  color: #ededf2;
+  margin-top: 10px;
+}
+
+.c1 {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.c2 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  border: 1px solid #7c7e80;
+}
+
+.c3 {
+  border: 1px solid #7c7e80;
+  padding: 8px;
+}
+
+<div
+  className="c0"
+>
+  <table
+    className="c1"
+  >
+    <thead>
+      <tr>
+        <th
+          className="c2"
+        >
+          Years
+        </th>
+        <th
+          className="c2"
+        >
+          Principal
+        </th>
+        <th
+          className="c2"
+        >
+          Interest
+        </th>
+        <th
+          className="c2"
+        >
+          EMI
+        </th>
+        <th
+          className="c2"
+        >
+          Balance
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td
+          className="c3"
+        >
+          Year: 
+          1
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 7,36,790
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 70,210
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 8,07,000
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 2,63,210
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="c3"
+        >
+          Year: 
+          2
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 2,63,217
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 5,783
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 2,69,000
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 0
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <table
+    className="c1"
+  >
+    <thead>
+      <tr>
+        <th
+          className="c2"
+        >
+          Months
+        </th>
+        <th
+          className="c2"
+        >
+          Principal
+        </th>
+        <th
+          className="c2"
+        >
+          Interest
+        </th>
+        <th
+          className="c2"
+        >
+          EMI
+        </th>
+        <th
+          className="c2"
+        >
+          Balance
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td
+          className="c3"
+        >
+          Month: 
+          1
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 58,500
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 8,750
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 67,250
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 9,41,500
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="c3"
+        >
+          Month: 
+          2
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 59,012
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 8,238
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 67,250
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 8,82,488
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="c3"
+        >
+          Month: 
+          3
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 59,528
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 7,722
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 67,250
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 8,22,960
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="c3"
+        >
+          Month: 
+          4
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 60,049
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 7,201
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 67,250
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 7,62,911
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="c3"
+        >
+          Month: 
+          5
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 60,575
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 6,675
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 67,250
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 7,02,336
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="c3"
+        >
+          Month: 
+          6
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 61,105
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 6,145
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 67,250
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 6,41,231
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="c3"
+        >
+          Month: 
+          7
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 61,639
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 5,611
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 67,250
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 5,79,592
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="c3"
+        >
+          Month: 
+          8
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 62,179
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 5,071
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 67,250
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 5,17,413
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="c3"
+        >
+          Month: 
+          9
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 62,723
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 4,527
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 67,250
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 4,54,690
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="c3"
+        >
+          Month: 
+          10
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 63,271
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 3,979
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 67,250
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 3,91,419
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="c3"
+        >
+          Month: 
+          11
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 63,825
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 3,425
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 67,250
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 3,27,594
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="c3"
+        >
+          Month: 
+          12
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 64,384
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 2,866
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 67,250
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 2,63,210
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="c3"
+        >
+          Month: 
+          13
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 64,947
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 2,303
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 67,250
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 1,98,263
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="c3"
+        >
+          Month: 
+          14
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 65,515
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 1,735
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 67,250
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 1,32,748
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="c3"
+        >
+          Month: 
+          15
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 66,088
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 1,162
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 67,250
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 66,660
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="c3"
+        >
+          Month: 
+          16
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 66,667
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 583
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 67,250
+        </td>
+        <td
+          className="c3"
+        >
+          ₹ 0
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
